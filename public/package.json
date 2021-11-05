@@ -1,0 +1,18 @@
+{
+  "name": "tailwind-template",
+  "description": "A template for including TailwindCSS with basic html projects, using vite",
+  "private": true,
+  "author": "Chaphasilor",
+  "license": "GPL-3.0",
+  "scripts": {
+    "dev": "npx vite --host",
+    "build": "npx vite build",
+    "serve": "npx vite preview --host"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19",
+    "vite": "^2.4.3"
+  }
+}
