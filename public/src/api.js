@@ -86,7 +86,7 @@ export default class API extends EventTarget {
         // overwrite the previous onclose-handler after the socket is connected
         this.socket.onclose = (event) => {
           clearInterval(this.pingIntervalId) // clear keep-alive interval
-          alert(`Lost connection to server! Please restart the scan.`)
+          alert(`Lost connection to server! Please reload the page.`)
         }
         
       }
@@ -235,7 +235,7 @@ export default class API extends EventTarget {
       },
       (info) => {
         console.log(`info:`, info)
-        this.emit(`command1Info`, info.data)
+        this.emit(`command1Info`, info)
       }
     )
     
